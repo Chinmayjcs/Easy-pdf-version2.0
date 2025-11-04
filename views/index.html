@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PDF Chainer</title>
+  <title>EasyPdfMerger</title>
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
@@ -13,12 +13,12 @@
 
     <form action="/merge" method="POST" enctype="multipart/form-data">
       <input type="file" name="pdfs" multiple accept=".pdf" required />
+      <p class="hint">Use the arrows to adjust the exact order of merging.</p>
+      <ul id="fileList" class="file-list"></ul>
       <button type="submit">Merge PDFs</button>
     </form>
   </div>
-  <p>We! understand you are facing isuues in order in which the pdf are merged</p>
-  <p>For now select multiple file , the order is the same as that in file names* mentioned</p>
-  <p>Apologies for inconvenience, Our team is working on the same, it will be fixed by 2nd Nov 2025 </p>
+  <p class="note">Tip: If your system reorders files automatically, you can still set the exact merge order here before submitting.</p>
   <script src="/script.js"></script>
 </body>
 </html>
