@@ -34,3 +34,71 @@ button {
 button:hover {
   background: #005fcc;
 }
+
+/* New: file list + reordering controls */
+.hint {
+  margin: 8px 0 4px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.file-list {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 10px 0 20px;
+  max-height: 240px;
+  overflow: auto;
+  border: 1px dashed #cfd8e3;
+  border-radius: 8px;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eef2f7;
+}
+
+.file-item:last-child {
+  border-bottom: none;
+}
+
+.file-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 70%;
+}
+
+.controls button {
+  margin-left: 6px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.controls .btn-move {
+  background: #eef6ff;
+  color: #0b67c2;
+}
+
+.controls .btn-move:hover {
+  background: #d9ebff;
+}
+
+.controls .btn-remove {
+  background: #ffe9e9;
+  color: #b42318;
+}
+
+.controls .btn-remove:hover {
+  background: #ffd1d1;
+}
+
+.note {
+  margin-top: 12px;
+  color: #667085;
+  text-align: center;
+}
